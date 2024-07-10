@@ -55,8 +55,7 @@ int main() {
         }
     }
     
-    //#endl >> str >> cout; not correct
-    // ?= # 
+    //#endl >> str >> cout; not correct, # == // : False
     cout << str << endl;
     
     return 0;

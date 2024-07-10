@@ -1,6 +1,7 @@
 #2 Problem Description
-Numbers in English are considered strings. Write code that logs each log, converts it to a large format, and prints it.
-// question key point small to large
+Numbers in English are considered strings. Write code that logs each log, 
+    converts it to a large format, and prints it.
+// question key point small to large and large to small
 
 Restrictions
 1 ≤ length of str ≤ 20

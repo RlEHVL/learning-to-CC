@@ -75,7 +75,7 @@ Problem Description
 write the code to output something like this:
 
 output #1
-!@#$%^&*(\'"<>?:;
+!@#$%^&*(\\\'\"<>?:;
 
 //worng:
 /**********************
@@ -110,15 +110,73 @@ a + b = c
 int main(void) {
     int a, b;
     cin >> a >> b;
-    cout << a << " + " <<  b <<" = " << a + b<< endl; #caution, spacebar in "" output syntex error that correct be like it" ";
+    cout << a << " + " <<  b <<" = " << a + b<< endl; //caution, 
+  //spacebar in "" output syntex error that correct be like it" ";
     return 0;
 }
 
 
 
+#2.9 problem
+It appears that the string str1 and str2 are split into two and entered.
+Write code that prints str1 and str2 as shown in the example
+
+input 1#
+apple pen
+
+output 1#
+applepen
+
+input 2#
+Hello World!
+
+output 2#
+HelloWorld!
 
 
+#include <iostream>
+#include <string>
 
+using namespace std;
 
+int main(void) {
+  string str1, str2;
+  cin >> str1 >> str2;
+  cout << str1 << str2; // ????? why did create problem
+  return 0;
+}
 
+#2.92 problem
+When a natural number n is input, write code that outputs "n is an even number"
+  if n is an even number, and "n is an odd number" if it is an odd number.
 
+Restrictions:
+1 ≤ n ≤ 1,000
+
+input 1#
+100
+
+output 1#
+100 is even
+
+input 2#
+1
+  
+output 2#
+1 is odd // this problems r compiler the type of n is dependent.
+
+#include <iostream>
+
+using namespace std;
+
+int main(void) {
+    int n;
+    cin >> n;
+    if (n%2 == 0) {
+        cout << n <<" is even"<< endl;//caution, spacebar
+    }
+    else if (n%1 == 0){
+        cout << n <<" is odd"<< endl;; //caution, spacebar
+    }
+    return 0;
+}
